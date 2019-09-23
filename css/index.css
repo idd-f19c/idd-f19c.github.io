@@ -20,6 +20,8 @@ html {
 	/*** Font Sets ***/
 	--font-body: 'Roboto', helvetica, arial, sans-serif;
 	--font-impact: 'PT Serif', georgia, times, 'times new roman', serif;
+
+	--animation: 0.4s;
 }
 
 body {
@@ -42,7 +44,12 @@ p {
 .doc-main a {
 	background-color: var(--secondary-a);
 	color: var(--on-secondary);
+	transition: background-color var(--animation);
 }
+.doc-main a:hover {
+	background-color: var(--secondary-b);
+}
+
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: var(--font-impact);
